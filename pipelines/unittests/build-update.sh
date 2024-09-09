@@ -20,7 +20,7 @@ GIT_STATUS_URL="https://$ACCESS_TOKEN:x-oauth-basic@$URI/repos/$OWNER/$REPO_SLUG
 TEMPLATE='{"state":"%s", "target_url":"%s", "description":"%s", "context":"%s"}'
 PAYLOAD=$(printf "$TEMPLATE" "$STATUS" "$TARGET_URL" "$DESCRIPTION" "$CONTEXT")
 
-# Function to display error messages and exit
+# Function to display error message and exit
 display_error() {
   echo "***********************"
   echo "BUILD-UPDATE Error"
